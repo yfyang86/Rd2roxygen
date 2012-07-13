@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Rd2roxygen by yihui</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Rd2roxygen</h1>
+        <p>Convert Rd to roxygen documentation</p>
+
+        <p class="view"><a href="https://github.com/yihui/Rd2roxygen">View the Project on GitHub <small>yihui/Rd2roxygen</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/yihui/Rd2roxygen/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/yihui/Rd2roxygen/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/yihui/Rd2roxygen">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>Functions to convert Rd to roxygen documentation. It can parse an Rd file to a list, create the roxygen documentation and update the original R script (e.g. the one containing the definition of the function) accordingly. This package also provides utilities which can help developers build packages using <strong>roxygen2</strong> more easily. The <a href="http://yihui.name/formatR"><strong>formatR</strong></a> package can be used to reformat the R code in the examples sections so that the code will be more readable.</p>
+
+<h2>Translate Rd to roxygen comments</h2>
+
+<p>Use <code>Rd2roxygen('path/to/your/package')</code> to update the R scripts under the <code>R</code> directory. Other functions might be useful for individual files:</p>
+
+<ul>
+<li><code>parse_file()</code></li>
+<li><code>create_roxygen()</code></li>
+<li><code>parse_and_save()</code></li>
+</ul><h2>Utilities to run roxygen and enhance documentation</h2>
+
+<p><code>roxygen_and_build()</code> (or <code>rab()</code> for short) runs <strong>roxygen2</strong> and tries to reformat the examples code in the documentation using the <strong>formatR</strong> package.</p>
+
+<h2>Installation and documentation</h2>
+
+<p>You can install the <a href="http://cran.r-project.org/package=Rd2roxygen">stable version on CRAN</a>:</p>
+
+<div class="highlight">
+<pre><span class="nv">install.packages</span><span class="gs">(</span>'Rd2roxygen'<span class="gs">)</span>
+</pre>
+</div>
+
+
+<p>Or use the <strong>devtools</strong> package to install the development version:</p>
+
+<div class="highlight">
+<pre><span class="nv">library</span><span class="gs">(</span>devtools<span class="gs">)</span>
+<span class="nv">install_github</span><span class="gs">(</span><span class="vi">'Rd2roxygen',</span> 'yihui'<span class="gs">)</span>
+</pre>
+</div>
+
+
+<p>See the <a href="http://cran.r-project.org/web/packages/Rd2roxygen/vignettes/Rd2roxygen.pdf">PDF vignette</a> for examples:</p>
+
+<div class="highlight">
+<pre><span class="nv">library</span><span class="gs">(</span>Rd2roxygen<span class="gs">)</span>
+<span class="nv">vignette</span><span class="gs">(</span>'Rd2roxygen'<span class="gs">)</span>
+</pre>
+</div>
+
+
+<p>Original scripts written by <a href="http://had.co.nz">Hadley Wickham</a>; improved and maintained by <a href="http://yihui.name">Yihui Xie</a>.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/yihui">yihui</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
